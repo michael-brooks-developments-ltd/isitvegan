@@ -1,0 +1,8 @@
+name: CI-CD
+
+on: push
+
+jobs:
+  deploy:
+    name: Deploy to production
+    runs-on: ubuntu-latest
