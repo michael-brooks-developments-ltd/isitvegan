@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => 'firstdeploy',
+    'default' => env('APP_DEPLOY_DEFAULT'),
 
     /*
     |--------------------------------------------------------------------------
