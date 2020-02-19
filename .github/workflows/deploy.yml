@@ -18,6 +18,7 @@ jobs:
       - name: Composer install
         run: composer install
       - name: Run Deployment
+        uses: atymic/deployer-php-action@master
         with:
           sh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           ssh-known-hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
