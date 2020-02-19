@@ -30,4 +30,4 @@ jobs:
           APP_DEPLOY_PATH: ${{ secrets.APP_DEPLOY_PATH }}
           APP_DEPLOY_USER: ${{ secrets.APP_DEPLOY_USER }}
           APP_DEPLOY_DEFAULT: ${{ secrets.APP_DEPLOY_DEFAULT }}
-        run: php artisan deploy -tag=${{ env.GITHUB_REF }} -vvv
+        run: php artisan deploy -vvv
