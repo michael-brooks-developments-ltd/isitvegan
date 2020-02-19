@@ -17,11 +17,12 @@ jobs:
           extensions: mbstring, bcmath
       - name: Composer install
         run: composer install
-      - name: Run Deployment
+      - name: Setup Deployer
         uses: atymic/deployer-php-action@master
         with:
           sh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           ssh-known-hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
+      - name: Run Deployment
         env:
           DOT_ENV: ${{ secrets.DOT_ENV }}
           APP_HOST: ${{ secrets.APP_HOST }}
