@@ -31,6 +31,3 @@ jobs:
           APP_DEPLOY_USER: ${{ secrets.APP_DEPLOY_USER }}
           APP_DEPLOY_DEFAULT: ${{ secrets.APP_DEPLOY_DEFAULT }}
         run: php artisan deploy -vvv
-        with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          ssh-known-hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
