@@ -33,12 +33,14 @@
                     <div class="flex flex-wrap -mx-3">
                         <div class="w-5/6 px-2">
                             <input
-                                class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500 rounded py-3 px-4 focus:outline-none focus:bg-white"
+                                class="appearance-none block w-full bg-white-200 text-gray-700 border border-gray-500
+                                rounded py-3 px-4 focus:outline-none focus:bg-white"
                                 id="grid-search" type="text" placeholder="Search..." name="q">
                         </div>
                         <div class="w-1/6">
                             <button
-                                class="appearance-none inline-block align-bottom align-text-bottom bg-teal-600 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded h-full w-full">
+                                class="appearance-none inline-block align-bottom align-text-bottom bg-teal-600
+                                hover:bg-teal-700 text-white font-bold py-2 px-4 rounded h-full w-full">
                                 <i class="fa fa-search"></i>
                             </button>
                         </div>
