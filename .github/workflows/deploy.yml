@@ -1,6 +1,8 @@
 name: CI-CD
 
-on: push
+on:
+  push:
+    branches: master
 
 jobs:
   deploy:
@@ -9,7 +11,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Setup PHP
-      - uses: shivammathur/setup-php@master
+        uses: shivammathur/setup-php@master
         with:
           php-version: 7.4
           extensions: mbstring, bcmath
