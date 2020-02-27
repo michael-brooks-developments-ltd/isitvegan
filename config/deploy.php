@@ -65,7 +65,7 @@ return [
 
         // Deployment is done and live
         'done' => [
-            //
+            'fpm:reload',
         ],
 
         // Deployment succeeded.
@@ -93,6 +93,7 @@ return [
     'options' => [
         'application' => env('APP_NAME', 'Laravel'),
         'repository' => 'git@github.com:michael-brooks-developments-ltd/isitvegan.git',
+        'php_fpm_service' => 'php7.1-fpm',
     ],
 
     /*
