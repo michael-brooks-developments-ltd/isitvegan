@@ -13,9 +13,9 @@
             >
             <span class="text-gray-600">{{ $product->name }}</span>
 
-            <img class="lg:float-right lg:w-1/2 lg:ml-12 pb-12" src="{{ $product->asset->location }}"
+            <img class="lg:float-right lg:w-1/2 lg:ml-12 pb-12 mt-6" src="{{ $product->asset->location }}"
                  alt="{{ $product->asset->name }}">
-            <h1 class="text-6xl my-8 ml-3 md:ml-0">Is {{ $product->name }} vegan</h1>
+            <h1 class="text-6xl my-8">Is {{ $product->name }} vegan</h1>
             {!! $product->description !!}
         </div>
     </div>

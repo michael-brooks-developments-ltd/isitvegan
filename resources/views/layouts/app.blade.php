@@ -35,7 +35,7 @@
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
 <div id="app">
-    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6 mb-8">
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
             <a href="/">
                 <img class="fill-current h-8 w-8 mr-2"
@@ -70,7 +70,7 @@
         </div>
     </nav>
 
-    <div class="container mx-auto">
+    <div class="container mx-auto h-full bg-white p-6">
         @yield('content')
     </div>
 </div>
