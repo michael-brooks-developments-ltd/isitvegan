@@ -7,6 +7,25 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <!-- Favicon data -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <script src="https://kit.fontawesome.com/507e3631af.js" crossorigin="anonymous"></script>
@@ -19,7 +38,8 @@
     <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6 mb-8">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
             <a href="/">
-                <img class="fill-current h-8 w-8 mr-2" src="https://img.icons8.com/officel/54/000000/vegan-symbol.png">
+                <img class="fill-current h-8 w-8 mr-2"
+                     src="https://res.cloudinary.com/dxkhwdsvm/image/upload/v1582794972/vegan-symbol_gt189z.png">
             </a>
             <a href="/">
                 <span class="font-semibold text-xl tracking-tight">{{ config('app.name', 'Laravel') }}</span>
