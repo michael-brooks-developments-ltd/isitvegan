@@ -18,4 +18,8 @@ Route::get('/categories', 'CategoryController@index');
 Route::get('/category/{slug}', 'CategoryController@show');
 Route::get('/search', 'ProductController@search');
 
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
 Route::get('/{slug}', 'ProductController@index');
