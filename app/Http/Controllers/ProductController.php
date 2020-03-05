@@ -14,12 +14,12 @@ class ProductController extends Controller
      * @param $slug
      * @return Factory|View
      */
-    public function index($slug): View
+    public function show($slug): View
     {
         $product = Product::where('slug', $slug)->first();
 
         if($product === null) {
-            abort(404, 'Dead');
+            abort(404);
         }
 
         return view('product', compact('product'));
@@ -28,7 +28,7 @@ class ProductController extends Controller
     public function search(Request $request)
     {
         $input = $request->get('q');
-        $result = Product::search($input)->get();
+        $result = Product::search($input)->paginate(9);
 
         return view('search', compact('input', 'result'));
     }

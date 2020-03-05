@@ -13,4 +13,7 @@
         </div>
     </div>
     @include('includes.products', ['products' => $result])
+
+    <br class="m-6">
+    {{ $products->links() }}
 @endsection

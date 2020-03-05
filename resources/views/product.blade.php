@@ -3,11 +3,12 @@
 @section('content')
     <div class="flex">
         <div class="w-full">
-            <a class="text-blue-600" href="/category/{{ $product->category->category->slug }}">
+            <a class="text-blue-600"
+               href="{{ route('category.show', ['slug' => $product->category->category->slug]) }}">
                 {{ $product->category->category->name }}
             </a>
             >
-            <a class="text-blue-600" href="/category/{{ $product->category->slug }}">
+            <a class="text-blue-600" href="{{ route('category.show', ['slug' => $product->category->slug]) }}">
                 {{ $product->category->name }}
             </a>
             >

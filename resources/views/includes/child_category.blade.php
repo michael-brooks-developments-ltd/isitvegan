@@ -1,5 +1,5 @@
 <h1 class="text-5xl mt-8 text-blue-600">
-    <a href="/category/{{ $childCategory->slug }}">{{ $childCategory->name }}</a>
+    <a href="{{ route('category.show', ['slug' => $childCategory->slug]) }}">{{ $childCategory->name }}</a>
 </h1>
 @include('includes.products', ['products' => $childCategory->products])
 @if ($child_category->categories)
