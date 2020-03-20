@@ -15,5 +15,5 @@
     @include('includes.products', ['products' => $result])
 
     <br class="m-6">
-    {{ $products->links() }}
+    {{ $result->links() }}
 @endsection
