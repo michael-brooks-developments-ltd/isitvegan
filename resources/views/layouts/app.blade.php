@@ -28,7 +28,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <script src="https://kit.fontawesome.com/507e3631af.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d25ec224f4.js" crossorigin="anonymous"></script>
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
