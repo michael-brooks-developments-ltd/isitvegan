@@ -49,6 +49,13 @@
     </script>
     <!-- End Matomo Code -->
 
+    <script type="text/javascript">
+        window._mNHandle = window._mNHandle || {};
+        window._mNHandle.queue = window._mNHandle.queue || [];
+        medianet_versionId = "3121199";
+    </script>
+    <script src="https://contextual.media.net/dmedianet.js?cid=8CU118252" async="async"></script>
+
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
 <div id="app">
@@ -89,6 +96,17 @@
 
     <div class="container mx-auto h-full bg-white p-6">
         @yield('content')
+    </div>
+
+    <div id="388360855">
+        <script type="text/javascript">
+            try {
+                window._mNHandle.queue.push(function (){
+                    window._mNDetails.loadTag("388360855", "970x90", "388360855");
+                });
+            }
+            catch (error) {}
+        </script>
     </div>
 </div>
 <footer class='w-full text-center bg-white border-t border-grey mt-32 py-8'>
